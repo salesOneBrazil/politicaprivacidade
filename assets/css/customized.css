@@ -1,0 +1,96 @@
+/* teste scrool Lateral novo*/
+.col-md-12{
+  display: inline-block;
+  margin-left:-10px;
+}
+.col-sm-12 img{
+  width:100%;
+  height:auto;
+}
+.col-xs-12 img{
+  width:100%;
+  height:500px;
+}
+  
+body .carousel-control-prev-icon,
+body .carousel-indicators li,
+body .carousel-control-next-icon{
+  background-color:#000;
+}
+
+span.carousel-control-prev-icon {
+ position: relative;
+ bottom: 40px;
+ right: 40px;
+}
+
+span.carousel-control-next-icon {
+ position: relative;
+ bottom: 40px;
+}
+.bg-coll {
+  background-color: #2196f3 !important;
+}
+.navbar.navbar-transp {
+  padding: 0px !important;
+  background-color: #03a9f4 !important;
+  box-shadow: none;
+  /* padding-top: 25px; */
+  color: #fff;
+}
+
+/*Scrool Horizontal*/
+/* .card-block {
+  display: inline-block;
+  min-height: 220px;
+  margin-bottom: 15px;
+} */
+
+.scrolling-wrapper {
+  overflow-x: hidden;
+  overflow-y: hidden;
+  white-space: nowrap;
+}
+.cardb{
+  display: inline-block;
+  min-height: 220px;
+  margin-bottom: 15px;
+  width: 25%;
+}
+.scrolling-wrapper p{
+  text-align:justify;	
+  text-indent:15px;	
+  width:25%;
+}
+#buttomScroll {
+  top: 160px;
+  color: #fff;
+  background: #ef5350;
+  /* position: relative; */
+}
+
+/*       Media Query                     */
+@media only screen and (max-width: 600px) {
+  #buttomScroll{
+    display: none;
+  }
+  .scrolling-wrapper {
+    overflow-x: scroll;
+  }
+  
+  .col-xs-12 img{
+    width:100%;
+    height:auto;
+  }
+  .message-principal{
+    margin-left: 5px;
+    margin-right: 5px;
+  }
+  .img-viagens{
+    width: 300px;
+    height: 300px;
+  }
+  .cardb{
+    width: 100%;
+  }
+}
